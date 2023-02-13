@@ -1,0 +1,5 @@
+gt-installer:
+  css:
+    theme:
+      css/gt.css: {}
+

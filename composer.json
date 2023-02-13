@@ -1,0 +1,169 @@
+{
+  "name": "gtsciences/gt_profile",
+  "description": "GT Sciences Drupal profile, for a more civilized age",
+  "type": "drupal-profile",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://cos.gatech.edu/",
+  "lifecycle": "experimental",
+  "support": {
+    "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
+    "chat": "https://www.drupal.org/node/314178"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "drupal/address": "^1.11",
+    "drupal/admin_toolbar": "^3.3",
+    "drupal/asset_injector": "^2.12",
+    "drupal/auto_anchors": "^2.1@beta",
+    "drupal/backward_compatibility": "^1.0",
+    "drupal/better_exposed_filters": "^6.0",
+    "drupal/blazy": "^2.13",
+    "drupal/block_class": "^2.0",
+    "drupal/config_ignore": "^3.0@dev",
+    "drupal/config_import_single": "^1.0",
+    "drupal/config_split": "^2.0@rc",
+    "drupal/crop": "^2.3",
+    "drupal/ctools": "^3.11",
+    "drupal/diff": "^1.1",
+    "drupal/editoria11y": "^2.0@beta",
+    "drupal/embed": "^2.20",
+    "drupal/entity_browser": "^2.8",
+    "drupal/field_group": "^3.4",
+    "drupal/group": "^3.0@beta",
+    "drupal/iframe": "^2.16",
+    "drupal/image_effects": "^3.4",
+    "drupal/inline_block_title_automatic": "^1.0",
+    "drupal/key": "^1.6",
+    "drupal/layout_builder_add_direct": "^2.0",
+    "drupal/layout_builder_operation_link": "^2.1",
+    "drupal/layout_builder_restrictions": "^2.13",
+    "drupal/layout_builder_styles": "^1.0@beta",
+    "drupal/linkchecker": "^1.0@beta",
+    "drupal/masquerade": "^2.0@rc",
+    "drupal/menu_link_attributes": "^1.2",
+    "drupal/metatag": "^1.22",
+    "drupal/migrate_source_csv": "^3.5",
+    "drupal/module_filter": "^3.2",
+    "drupal/oembed_providers": "^2.1",
+    "drupal/pathauto": "^1.11",
+    "drupal/quick_node_clone": "^1.15",
+    "drupal/redirect": "^1.8",
+    "drupal/scheduler": "^2.0@dev",
+    "drupal/simple_sitemap": "^4.1",
+    "drupal/social_media_links": "^2.0@dev",
+    "drupal/svg_image": "^1.16",
+    "drupal/token": "^1.11",
+    "drupal/twig_tweak": "^3.2",
+    "drupal/twig_field_value": "^2.0",
+    "drupal/views_bulk_edit": "^2.7",
+    "drupal/views_bulk_operations": "^4.2",
+    "drupal/views_data_export": "^1.1",
+    "gtsciences/gt_sso": "^1.0@dev",
+    "gtsciences/gt_tools": "^4.0@dev",
+    "gtsciences/gt": "^1.0@dev",
+    "gtsciences/hg_reader": "^1.0@dev"
+  },
+  "require-dev": {
+  },
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "composer/installers": true,
+      "cweagans/composer-patches": true,
+      "deployer/deployer": true,
+      "drupal/*": true,
+      "gtsciences/*": true,
+      "oomphinc/composer-installers-extender": true,
+      "wikimedia/composer-merge-plugin": true
+    }
+  },
+  "extra": {
+    "drupal-scaffold": {
+      "locations": {
+        "web-root": "web/"
+      },
+      "gitignore": false,
+      "file-mapping": {
+        "[project-root]/.gitattributes": false,
+        "[project-root]/.editorconfig": {
+          "mode": "replace",
+          "path": "assets/editorconfig",
+          "overwrite": true
+        },
+        "[web-root]/robots.txt": {
+          "path": "assets/robots.txt"
+        },
+        "[web-root]/android-chrome-192x192.png": {
+          "path": "assets/android-chrome-192x192.png",
+          "overwrite": false
+        },
+        "[web-root]/android-chrome-512x512.png": {
+          "path": "assets/android-chrome-512x512.png",
+          "overwrite": false
+        },
+        "[web-root]/apple-touch-icon.png": {
+          "path": "assets/apple-touch-icon.png",
+          "overwrite": false
+        },
+        "[web-root]/browserconfig.xml": {
+          "path": "assets/browserconfig.xml",
+          "overwrite": false
+        },
+        "[web-root]/favicon.ico": {
+          "path": "assets/favicon.ico",
+          "overwrite": false
+        },
+        "[web-root]/favicon-32x32.png": {
+          "path": "assets/favicon-32x32.png",
+          "overwrite": false
+        },
+        "[web-root]/favicon-48x48.png": {
+          "path": "assets/favicon-48x48.png",
+          "overwrite": false
+        },
+        "[web-root]/mstile-150x150.png": {
+          "path": "assets/mstile-150x150.png",
+          "overwrite": false
+        },
+        "[web-root]/safari-pinned-tab.svg": {
+          "path": "assets/safari-pinned-tab.svg",
+          "overwrite": false
+        },
+        "[web-root]/site.webmanifest": {
+          "path": "assets/site.webmanifest",
+          "overwrite": false
+        }
+      },
+      "installer-name": "gtsciences"
+    },
+    "enable-patching": true,
+    "composer-exit-on-patch-failure": true,
+    "patchLevel": {
+      "drupal/core": "-p2"
+    },
+    "patches": {
+      "drupal/core": {
+        "Performance regression introduced by container serialization solution": "https://www.drupal.org/files/issues/2022-12-21/3327856-10.0.x-98.patch",
+        "Add block classes for bundle and view mode": "https://www.drupal.org/files/issues/block_content-classes-2830725-2.patch"
+      },
+      "drupal/entity_browser": {
+        "2897855 - Entity browser modal dialog opens by pressing enter in any text field": "https://www.drupal.org/files/issues/2020-10-07/prevent-entity-browser-from-open-on-enter-key-pressed-2897855-17-reroll-with-improvement.patch",
+        "3183414 - Entity browser modal popup does not close on pressing escape key": "https://www.drupal.org/files/issues/2020-11-19/3183414-2.patch"
+      }
+    }
+  }
+}
