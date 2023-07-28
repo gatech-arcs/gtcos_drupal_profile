@@ -60,6 +60,7 @@
     "drupal/quick_node_clone": "^1.15",
     "drupal/redirect": "^1.8",
     "drupal/scheduler": "^2.0@dev",
+    "drupal/simple_media_bulk_upload": "^1.0",
     "drupal/simple_sitemap": "^4.1",
     "drupal/social_media_links": "^2.0@dev",
     "drupal/svg_image": "^1.16",
