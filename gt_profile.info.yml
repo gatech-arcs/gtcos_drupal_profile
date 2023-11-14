@@ -1,9 +1,9 @@
 name: GT
 type: profile
-description: "GT Sciences Drupal 9+ Installation Profile"
-core_version_requirement: ^9 || ^10
+description: "GT Sciences Drupal 10+ Installation Profile"
+core_version_requirement: ^10
 distribution:
-  - name: Georgia Tech College of Sciences Profile
+  name: "Georgia Tech College of Sciences Profile"
 
 dependencies:
   # Core

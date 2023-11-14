@@ -1,12 +1,13 @@
-gt/sso
-"drupal/cas_attributes": "^2.1"
+{
+# gt/sso
+"drupal/cas_attributes": "^2.1",
 
-composer.json
+# composer.json
 "drupal/config_entity_revisions": "^2.0",
 "drupal/csv_importer": "^1.14",
 "drupal/encrypt": "^3.0",
 
-// entity embed for CKE5 in progress; media_embed from core should work in CKE5?
+# entity embed for CKE5 in progress; media_embed from core should work in CKE5?
 "drupal/entity_embed": "^1.2",
 
 "drupal/field_group": "^3.3",
@@ -42,3 +43,5 @@ composer.json
 },
 "drupal/entity_browser": {
   "Media file lost while duplicating paragraph": "https://www.drupal.org/files/issues/2020-03-25/3104901.patch",
+}
+}
